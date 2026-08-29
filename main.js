@@ -1,5 +1,5 @@
 /**
- * VSP Techies — Main JavaScript
+ * VSP Techies — Main JavaScript (Enhanced)
  * Pure vanilla JS · No frameworks
  */
 
@@ -8,17 +8,17 @@
 
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* --- Course Data --- */
+  /* --- Course Data with Pricing and Details --- */
   const courseData = {
     robotics: {
       icon: '🤖',
       title: 'Robotics',
       desc: 'Build, code & race real robots. Learn sensors, motors & teamwork.',
       details: [
-        { label: 'Age Group', value: ' From 8 years' },
+        { label: 'Age Group', value: '8 – 16 years' },
         { label: 'Duration', value: '3 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 7,500 / level' },
-        { label: 'Includes', value: 'Kit materials, competition prep, certificate' }
+        { label: 'Fee', value: '₹ 3,000 / month' },
+        { label: 'Includes', value: 'Robot kits, materials, competition prep, certificate' }
       ]
     },
     ai: {
@@ -26,9 +26,9 @@
       title: 'Artificial Intelligence',
       desc: 'Discover how machines learn, see & decide — no boring lectures!',
       details: [
-        { label: 'Age Group', value: 'From 10 years' },
-        { label: 'Duration', value: '2 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 6,000 / level' },
+        { label: 'Age Group', value: '10 – 18 years' },
+        { label: 'Duration', value: '3 months · 2 sessions/week' },
+        { label: 'Fee', value: '₹ 2,500 / month' },
         { label: 'Includes', value: 'Python basics, ML projects, certificate' }
       ]
     },
@@ -37,9 +37,9 @@
       title: 'CorelDRAW',
       desc: 'Design logos, posters & graphics like a pro designer.',
       details: [
-        { label: 'Age Group', value: 'From 8 years' },
-        { label: 'Duration', value: '3-4 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 7,500 for the course' },
+        { label: 'Age Group', value: '10+ years' },
+        { label: 'Duration', value: '2 months · 2 sessions/week' },
+        { label: 'Fee', value: '₹ 2,000 / month' },
         { label: 'Includes', value: 'Design projects, portfolio building, certificate' }
       ]
     },
@@ -48,10 +48,10 @@
       title: 'Photoshop',
       desc: 'Edit photos, create digital art & bring imagination to life.',
       details: [
-        { label: 'Age Group', value: 'From 10 years' },
-        { label: 'Duration', value: '3-4 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 7,500 for the course' },
-        { label: 'Includes', value: 'Photo editing, digital art, certificate' }
+        { label: 'Age Group', value: '10+ years' },
+        { label: 'Duration', value: '2 months · 2 sessions/week' },
+        { label: 'Fee', value: '₹ 2,200 / month' },
+        { label: 'Includes', value: 'Photo editing, digital art projects, certificate' }
       ]
     },
     software: {
@@ -59,10 +59,10 @@
       title: 'Software Courses',
       desc: 'Coding, apps & web basics — start your software journey early.',
       details: [
-        { label: 'Age Group', value: 'From 15 years (edit as needed)' },
+        { label: 'Age Group', value: '8 – 18 years' },
         { label: 'Duration', value: '3 months · 2 sessions/week' },
-        { label: 'Fee', value: 'Starting From ₹ 5,000' },
-        { label: 'Includes', value: 'MS Office, Python,HTML/CSS/JS, project builds, certificate' }
+        { label: 'Fee', value: '₹ 2,800 / month' },
+        { label: 'Includes', value: 'HTML/CSS/JS, project builds, certificate' }
       ]
     },
     chess: {
@@ -70,10 +70,10 @@
       title: 'Chess',
       desc: 'Sharpen strategy, focus & critical thinking — one move at a time.',
       details: [
-        { label: 'Age Group', value: ' From 4+ years' },
+        { label: 'Age Group', value: '6+ years' },
         { label: 'Duration', value: 'Ongoing · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 2,000 / month (placeholder)' },
-        { label: 'Includes', value: 'Learning form Basics, Tournament prep, rating improvement, certificate' }
+        { label: 'Fee', value: '₹ 1,500 / month' },
+        { label: 'Includes', value: 'Tournament prep, rating improvement, certificate' }
       ]
     }
   };
@@ -100,9 +100,12 @@
     initQuoteRotator();
     initCounters();
     initContactForm();
+    initNewsletterForm();
+    initFaqAccordion();
     initNavScroll();
     initCourseModal();
     initTestimonialCarousel();
+    initBackToTopButton();
     applyStaggerDelays();
   }
 
@@ -404,6 +407,60 @@
     resetAuto();
   }
 
+  /* --- FAQ Accordion --- */
+  function initFaqAccordion() {
+    const faqQuestions = document.querySelectorAll('.faq__question');
+
+    faqQuestions.forEach(function (question) {
+      question.addEventListener('click', function () {
+        const answer = this.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+
+        // Close all other answers
+        document.querySelectorAll('.faq__answer.open').forEach(function (openAnswer) {
+          openAnswer.classList.remove('open');
+          openAnswer.previousElementSibling.setAttribute('aria-expanded', 'false');
+        });
+
+        // Toggle current answer
+        if (!isOpen) {
+          answer.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        } else {
+          answer.classList.remove('open');
+          this.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+
+  /* --- Back to Top Button --- */
+  function initBackToTopButton() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) return;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+        backToTopBtn.style.display = 'flex';
+      } else {
+        backToTopBtn.classList.remove('show');
+        setTimeout(function () {
+          if (!backToTopBtn.classList.contains('show')) {
+            backToTopBtn.style.display = 'none';
+          }
+        }, 300);
+      }
+    });
+
+    backToTopBtn.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: prefersReducedMotion ? 'auto' : 'smooth'
+      });
+    });
+  }
+
   /* --- Contact Form --- */
   function initContactForm() {
     const form = document.getElementById('contactForm');
@@ -416,6 +473,26 @@
         validate: function (v) {
           if (!v.trim()) return 'Please enter your name.';
           if (v.trim().length < 2) return 'Name must be at least 2 characters.';
+          return '';
+        }
+      },
+      email: {
+        el: document.getElementById('email'),
+        error: document.getElementById('emailError'),
+        validate: function (v) {
+          if (!v.trim()) return 'Please enter your email.';
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(v)) return 'Please enter a valid email address.';
+          return '';
+        }
+      },
+      phone: {
+        el: document.getElementById('phone'),
+        error: document.getElementById('phoneError'),
+        validate: function (v) {
+          if (!v.trim()) return 'Please enter your phone number.';
+          var phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/;
+          if (!phoneRegex.test(v)) return 'Please enter a valid phone number.';
           return '';
         }
       },
@@ -447,23 +524,23 @@
     };
 
     Object.keys(fields).forEach(function (key) {
-      const field = fields[key];
+      var field = fields[key];
       field.el.addEventListener('input', function () {
         clearError(field);
       });
       field.el.addEventListener('blur', function () {
-        const err = field.validate(field.el.value);
+        var err = field.validate(field.el.value);
         if (err) showError(field, err);
       });
     });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      let valid = true;
+      var valid = true;
 
       Object.keys(fields).forEach(function (key) {
-        const field = fields[key];
-        const err = field.validate(field.el.value);
+        var field = fields[key];
+        var err = field.validate(field.el.value);
         if (err) {
           showError(field, err);
           valid = false;
@@ -473,12 +550,91 @@
       });
 
       if (valid) {
-        form.reset();
-        showToast('Thank you! We\'ll get back to you soon.');
+        submitFormToService(form);
       }
     });
   }
 
+  /* --- Submit form to Formspree --- */
+  function submitFormToService(form) {
+    var formData = new FormData(form);
+    var formspreeEndpoint = 'https://formspree.io/f/xzebbnjg';
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    fetch(formspreeEndpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(function (response) {
+      if (response.ok) {
+        form.reset();
+        showToast('✓ Thank you! We\'ll get back to you soon.');
+      } else {
+        showToast('⚠ Something went wrong. Please try again.');
+      }
+    })
+    .catch(function (error) {
+      console.error('Form submission error:', error);
+      showToast('⚠ Network error. Please check your connection.');
+    })
+    .finally(function () {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
+  }
+
+  /* --- Newsletter Form --- */
+  function initNewsletterForm() {
+    var form = document.getElementById('newsletterForm');
+    if (!form) return;
+
+    var emailInput = document.getElementById('newsletterEmail');
+    var errorEl = document.getElementById('newsletterError');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var email = emailInput.value.trim();
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!email) {
+        errorEl.textContent = 'Please enter your email.';
+        errorEl.style.color = '#ef4444';
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        errorEl.textContent = 'Please enter a valid email address.';
+        errorEl.style.color = '#ef4444';
+        return;
+      }
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Subscribing...';
+      submitBtn.disabled = true;
+
+      setTimeout(function () {
+        emailInput.value = '';
+        errorEl.textContent = '✓ Successfully subscribed! Check your email.';
+        errorEl.style.color = '#22c55e';
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+
+        setTimeout(function () {
+          errorEl.textContent = '';
+        }, 4000);
+      }, 1000);
+    });
+  }
+
+  /* --- Form Utilities --- */
   function showError(field, msg) {
     field.el.classList.add('error');
     field.error.textContent = msg;
@@ -490,8 +646,8 @@
   }
 
   function showToast(message) {
-    const toast = document.getElementById('toast');
-    const msgEl = document.getElementById('toastMessage');
+    var toast = document.getElementById('toast');
+    var msgEl = document.getElementById('toastMessage');
     if (!toast || !msgEl) return;
 
     msgEl.textContent = message;
