@@ -550,6 +550,7 @@
       });
 
       if (valid) {
+        showToast('Thank you! We\'ll get back 2 you soon.');
         submitFormToService(form);
       }
     });
