@@ -931,33 +931,33 @@ ul {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: var(--primary);
+  background: #87CEEB;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
-  box-shadow: var(--shadow-sm);
-  color: var(--white);
+  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.3);
+  color: #FFFFFF;
 }
 
 /* Platform-specific colors for social links */
 .social-links a[href*="facebook.com"] {
-  background: #FFFFFF;
-  color: #1877F2;
+  background: #87CEEB;
+  color: #FFFFFF;
 }
 
 .social-links a[href*="instagram.com"] {
-  background: #FFFFFF;
-  color: #E1306C;
+  background: #87CEEB;
+  color: #FFFFFF;
 }
 
 .social-links a[href*="youtube.com"] {
-  background: #FFFFFF;
-  color: #FF0000;
+  background: #87CEEB;
+  color: #FFFFFF;
 }
 
 .social-links a[href*="wa.me"] {
-  background: #FFFFFF;
-  color: #25d366;
+  background: #87CEEB;
+  color: #FFFFFF;
 }
 
 .social-links a:hover {
@@ -968,22 +968,22 @@ ul {
 
 /* Darker shades on hover */
 .social-links a[href*="facebook.com"]:hover {
-  background: #D4A574;
+  background: #6BB6D6;
   color: #FFFFFF;
 }
 
 .social-links a[href*="instagram.com"]:hover {
-  background: #D4A574;
+  background: #6BB6D6;
   color: #FFFFFF;
 }
 
 .social-links a[href*="youtube.com"]:hover {
-  background: #D4A574;
+  background: #6BB6D6;
   color: #FFFFFF;
 }
 
 .social-links a[href*="wa.me"]:hover {
-  background: #D4A574;
+  background: #6BB6D6;
   color: #FFFFFF;
 }
 
@@ -1199,31 +1199,29 @@ ul {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: var(--primary);
+  background: #87CEEB;
   color: var(--white);
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   cursor: pointer;
   z-index: 998;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.4);
   transition: all var(--transition);
-  opacity: 0;
-  visibility: hidden;
-}
-
-.back-to-top.show {
   opacity: 1;
   visibility: visible;
 }
 
+
+
 .back-to-top:hover {
-  background: var(--primary-light);
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+  background: #6BB6D6;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(135, 206, 235, 0.6);
 }
 
 /* --- Modal --- */
