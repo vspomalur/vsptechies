@@ -15,10 +15,10 @@
       title: 'Robotics',
       desc: 'Build, code & race real robots. Learn sensors, motors & teamwork.',
       details: [
-        { label: 'Age Group', value: '8 – 16 years' },
+        { label: 'Age Group', value: '8+ years' },
         { label: 'Duration', value: '3 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 3,000 / month' },
-        { label: 'Includes', value: 'Robot kits, materials, competition prep, certificate' }
+        { label: 'Fee', value: '₹ 7,500 / level(6 levels)' },
+        { label: 'Includes', value: 'Robotic kits, materials, competition prep, certificate' }
       ]
     },
     ai: {
@@ -26,9 +26,9 @@
       title: 'Artificial Intelligence',
       desc: 'Discover how machines learn, see & decide — no boring lectures!',
       details: [
-        { label: 'Age Group', value: '10 – 18 years' },
-        { label: 'Duration', value: '3 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 2,500 / month' },
+        { label: 'Age Group', value: '12+ years' },
+        { label: 'Duration', value: '2 months · 2 sessions/week' },
+        { label: 'Fee', value: '₹ 6,000 / level(5 levels)' },
         { label: 'Includes', value: 'Python basics, ML projects, certificate' }
       ]
     },
@@ -37,9 +37,9 @@
       title: 'CorelDRAW',
       desc: 'Design logos, posters & graphics like a pro designer.',
       details: [
-        { label: 'Age Group', value: '10+ years' },
-        { label: 'Duration', value: '2 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 2,000 / month' },
+        { label: 'Age Group', value: '8+ years' },
+        { label: 'Duration', value: '2-3 months · 2 sessions/week' },
+        { label: 'Fee', value: '₹ 5,000 on whole' },
         { label: 'Includes', value: 'Design projects, portfolio building, certificate' }
       ]
     },
@@ -48,9 +48,9 @@
       title: 'Photoshop',
       desc: 'Edit photos, create digital art & bring imagination to life.',
       details: [
-        { label: 'Age Group', value: '10+ years' },
-        { label: 'Duration', value: '2 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 2,200 / month' },
+        { label: 'Age Group', value: '8+ years' },
+        { label: 'Duration', value: '2-4 months · 2 sessions/week' },
+        { label: 'Fee', value: '₹ 7,500 on whole' },
         { label: 'Includes', value: 'Photo editing, digital art projects, certificate' }
       ]
     },
@@ -59,9 +59,9 @@
       title: 'Software Courses',
       desc: 'Coding, apps & web basics — start your software journey early.',
       details: [
-        { label: 'Age Group', value: '8 – 18 years' },
+        { label: 'Age Group', value: '12+ years' },
         { label: 'Duration', value: '3 months · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 2,800 / month' },
+        { label: 'Fee', value: '₹ 5,000-₹ 7,500 on whole according to the course' },
         { label: 'Includes', value: 'HTML/CSS/JS, project builds, certificate' }
       ]
     },
@@ -72,7 +72,7 @@
       details: [
         { label: 'Age Group', value: '6+ years' },
         { label: 'Duration', value: 'Ongoing · 2 sessions/week' },
-        { label: 'Fee', value: '₹ 1,500 / month' },
+        { label: 'Fee', value: '₹ 2,000 / month' },
         { label: 'Includes', value: 'Tournament prep, rating improvement, certificate' }
       ]
     }
