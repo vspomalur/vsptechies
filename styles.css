@@ -5,7 +5,7 @@
 
 /* --- CSS Variables --- */
 :root {
-  --primary: #19fff7;
+  --primary: #002792;
   --primary-light: #2a4fa8;
   --primary-dark: #152a5e;
   --accent-orange: #ff8c42;
@@ -1172,9 +1172,32 @@ ul {
   box-shadow: 0 2px 8px rgba(135, 206, 235, 0.3);
   color: #FFFFFF;
 }
+/* Platform-specific colors for social links */
+
+
+.footer__social-link[href*="instagram.com"] {
+  background: #74f8ff;
+  color: #FFFFFF;
+}
+.footer__social-link[href*="wa.me"] {
+  background: #74f8ff;
+  color: #FFFFFF;
+}
 
 .footer__social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
   color: var(--accent-orange);
+}
+
+/* Darker shades on hover */
+.footer__social-link[href*="instagram.com"]:hover {
+  background:#23bdc5;
+  color: #FFFFFF;
+}
+.footer__social-link[href*="wa.me"]:hover {
+  background: #23bdc5;
+  color: #FFFFFF;
 }
 
 .footer__bottom {
