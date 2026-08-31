@@ -69,7 +69,7 @@ img {
 }
 
 a {
-  color: #06fc02;
+  color: var(--primary);
   text-decoration: none;
   transition: color var(--transition);
 }
@@ -296,8 +296,7 @@ ul {
 }
 
 /* --- Floating WhatsApp Button --- */
-.whatsapp-float {
-  position: fixed;
+.whatsapp-float {  position: fixed;
   bottom: 20px;
   right: 20px;
   width: 60px;
@@ -315,6 +314,7 @@ ul {
   color: var(--white);
   text-decoration: none;
 }
+
 
 .whatsapp-float:hover {
   background: #1ebd59;
@@ -926,23 +926,65 @@ ul {
 }
 
 .social-links a {
-  /* color: rgb(0, 250, 0); */
   display: flex;
   align-items: center;
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: var(--white);
+  background: var(--primary);
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
   box-shadow: var(--shadow-sm);
+  color: var(--white);
+}
+
+/* Platform-specific colors for social links */
+.social-links a[href*="facebook.com"] {
+  background: #FFFFFF;
+  color: #1877F2;
+}
+
+.social-links a[href*="instagram.com"] {
+  background: #FFFFFF;
+  color: #E1306C;
+}
+
+.social-links a[href*="youtube.com"] {
+  background: #FFFFFF;
+  color: #FF0000;
+}
+
+.social-links a[href*="wa.me"] {
+  background: #FFFFFF;
+  color: #25d366;
 }
 
 .social-links a:hover {
-  background: var(--primary);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
+  color: var(--white);
+}
+
+/* Darker shades on hover */
+.social-links a[href*="facebook.com"]:hover {
+  background: #D4A574;
+  color: #FFFFFF;
+}
+
+.social-links a[href*="instagram.com"]:hover {
+  background: #D4A574;
+  color: #FFFFFF;
+}
+
+.social-links a[href*="youtube.com"]:hover {
+  background: #D4A574;
+  color: #FFFFFF;
+}
+
+.social-links a[href*="wa.me"]:hover {
+  background: #D4A574;
+  color: #FFFFFF;
 }
 
 /* --- Contact Form --- */
@@ -1121,7 +1163,7 @@ ul {
 .footer__social-link {
   display: inline-block;
   font-size: 1.2rem;
-  color: var(--grey-400);
+  color: var(--gray-400);
   transition: color var(--transition);
 }
 
