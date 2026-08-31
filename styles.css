@@ -296,8 +296,7 @@ ul {
 }
 
 /* --- Floating WhatsApp Button --- */
-.whatsapp-float {
-  position: fixed;
+.whatsapp-float {  position: fixed;
   bottom: 20px;
   right: 20px;
   width: 60px;
@@ -315,6 +314,7 @@ ul {
   color: var(--white);
   text-decoration: none;
 }
+
 
 .whatsapp-float:hover {
   background: #1ebd59;
@@ -931,17 +931,52 @@ ul {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: var(--white);
+  background: var(--primary);
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
   box-shadow: var(--shadow-sm);
+  color: var(--white);
+}
+
+/* Platform-specific colors for social links */
+.social-links a[href*="facebook.com"] {
+  background: #1877F2;
+}
+
+.social-links a[href*="instagram.com"] {
+  background: #E1306C;
+}
+
+.social-links a[href*="youtube.com"] {
+  background: #FF0000;
+}
+
+.social-links a[href*="wa.me"] {
+  background: #25d366;
 }
 
 .social-links a:hover {
-  background: var(--primary);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
+  color: var(--white);
+}
+
+/* Darker shades on hover */
+.social-links a[href*="facebook.com"]:hover {
+  background: #0A66C2;
+}
+
+.social-links a[href*="instagram.com"]:hover {
+  background: #C13584;
+}
+
+.social-links a[href*="youtube.com"]:hover {
+  background: #CC0000;
+}
+
+.social-links a[href*="wa.me"]:hover {
+  background: #1EBD59;
 }
 
 /* --- Contact Form --- */
