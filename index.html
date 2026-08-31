@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VSP Techies — Educational centre for Robotics, AI, Design, Software & Chess. Fun learning for kids, trusted by parents.">
+  <meta property="og:title" content="VSP Techies | Learn · Create · Compete">
+  <meta property="og:description" content="Educational centre for Robotics, AI, Design, Software & Chess">
+  <meta property="og:type" content="website">
+  <title>VSP Techies | Learn · Create · Compete</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">⚡</span>
+        VSP Techies
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#courses" class="nav__link">Courses</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917845367575?text=Hello%20VSP%20Techies!%20I%20want%20to%20know%20more%20about%20your%20courses." class="whatsapp-float" title="Chat with us on WhatsApp" aria-label="WhatsApp">
+    <span>💬</span>
+  </a>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__blobs" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__badge reveal">🚀 Where Young Minds Become Innovators</p>
+        <h1 class="hero__title reveal">Welcome Future Techies!</h1>
+        <p class="hero__subtitle reveal">
+          Hands-on courses in Robotics, AI, Design &amp; more — built for curious kids,
+          trusted by caring parents.
+        </p>
+        <div class="hero__quote reveal" aria-live="polite">
+          <blockquote>
+            <p id="heroQuote">"The future belongs to those who learn more skills."</p>
+            <cite id="heroQuoteAuthor">— Robert Greene</cite>
+          </blockquote>
+        </div>
+        <div class="hero__actions reveal">
+          <a href="#courses" class="btn btn--primary">Explore Courses</a>
+          <a href="#contact" class="btn btn--outline">Talk to Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses section" id="courses">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Our Courses</h2>
+          <p class="section__subtitle">Pick your adventure — every course is hands-on, fun, and future-ready.</p>
+        </div>
+        <div class="courses__grid">
+
+          <article class="course-card reveal" data-course="robotics" style="--card-accent: #ff8c42">
+            <div class="course-card__header">
+              <div class="course-card__icon">🤖</div>
+              <span class="course-card__level">Beginner</span>
+            </div>
+            <h3 class="course-card__title">Robotics</h3>
+            <p class="course-card__desc">Build, code &amp; race real robots. Learn sensors, motors &amp; teamwork.</p>
+            <p class="course-card__enrolled">👥 <span class="course-enrollment">45</span> students enrolled</p>
+            <span class="course-card__cta">Learn more →</span>
+          </article>
+
+          <article class="course-card reveal" data-course="ai" style="--card-accent: #2ec4b6">
+            <div class="course-card__header">
+              <div class="course-card__icon">🧠</div>
+              <span class="course-card__level level--advanced">Advanced</span>
+            </div>
+            <h3 class="course-card__title">Artificial Intelligence</h3>
+            <p class="course-card__desc">Discover how machines learn, see &amp; decide — no boring lectures!</p>
+            <p class="course-card__enrolled">👥 <span class="course-enrollment">32</span> students enrolled</p>
+            <span class="course-card__cta">Learn more →</span>
+          </article>
+
+          <article class="course-card reveal" data-course="coreldraw" style="--card-accent: #a855f7">
+            <div class="course-card__header">
+              <div class="course-card__icon">🎨</div>
+              <span class="course-card__level">Beginner</span>
+            </div>
+            <h3 class="course-card__title">CorelDRAW</h3>
+            <p class="course-card__desc">Design logos, posters &amp; graphics like a pro designer.</p>
+            <p class="course-card__enrolled">👥 <span class="course-enrollment">28</span> students enrolled</p>
+            <span class="course-card__cta">Learn more →</span>
+          </article>
+
+          <article class="course-card reveal" data-course="photoshop" style="--card-accent: #ec4899">
+            <div class="course-card__header">
+              <div class="course-card__icon">📸</div>
+              <span class="course-card__level">Intermediate</span>
+            </div>
+            <h3 class="course-card__title">Photoshop</h3>
+            <p class="course-card__desc">Edit photos, create digital art &amp; bring imagination to life.</p>
+            <p class="course-card__enrolled">👥 <span class="course-enrollment">35</span> students enrolled</p>
+            <span class="course-card__cta">Learn more →</span>
+          </article>
+
+          <article class="course-card reveal" data-course="software" style="--card-accent: #22c55e">
+            <div class="course-card__header">
+              <div class="course-card__icon">💻</div>
+              <span class="course-card__level level--advanced">Advanced</span>
+            </div>
+            <h3 class="course-card__title">Software Courses</h3>
+            <p class="course-card__desc">Coding, apps &amp; web basics — start your software journey early.</p>
+            <p class="course-card__enrolled">👥 <span class="course-enrollment">52</span> students enrolled</p>
+            <span class="course-card__cta">Learn more →</span>
+          </article>
+
+          <article class="course-card reveal" data-course="chess" style="--card-accent: #ffd166">
+            <div class="course-card__header">
+              <div class="course-card__icon">♟️</div>
+              <span class="course-card__level">Beginner</span>
+            </div>
+            <h3 class="course-card__title">Chess</h3>
+            <p class="course-card__desc">Sharpen strategy, focus &amp; critical thinking — one move at a time.</p>
+            <p class="course-card__enrolled">👥 <span class="course-enrollment">40</span> students enrolled</p>
+            <span class="course-card__cta">Learn more →</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Why VSP Techies -->
+    <section class="why section" id="why">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Why VSP Techies?</h2>
+          <p class="section__subtitle">Built for kids who dream big — and parents who want the best.</p>
+        </div>
+        <div class="why__columns">
+          <div class="why__col why__col--students reveal">
+            <h3 class="why__col-title">🎮 For Students</h3>
+            <ul class="why__list">
+              <li>Hands-on projects every week — no boring theory-only classes</li>
+              <li>Competitions, hackathons &amp; showcase days to shine</li>
+              <li>Friendly mentors who speak your language</li>
+              <li>Learn skills that actually matter in the real world</li>
+            </ul>
+          </div>
+          <div class="why__col why__col--parents reveal">
+            <h3 class="why__col-title">👨‍👩‍👧 For Parents</h3>
+            <ul class="why__list">
+              <li>Structured curriculum with clear learning outcomes</li>
+              <li>Small batch sizes for personal attention</li>
+              <li>Regular progress updates &amp; parent-teacher meets</li>
+              <li>Safe, supportive environment your child will love</li>
+            </ul>
+          </div>
+        </div>
+        <div class="stats reveal">
+          <div class="stat">
+            <span class="stat__number" data-target="232">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Happy Students</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-target="6">0</span><span class="stat__suffix"></span>
+            <span class="stat__label">Expert Courses</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-target="5">0</span><span class="stat__suffix">+</span>
+            <span class="stat__label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">What People Say</h2>
+          <p class="section__subtitle">Real stories from our techie community.</p>
+        </div>
+        <div class="testimonial-carousel reveal">
+          <div class="testimonial-carousel__track" id="testimonialTrack">
+            <div class="testimonial-slide active">
+              <img src="https://api.placeholder.com/80/80?text=Rahul" alt="Rahul, Age 11" class="testimonial-slide__photo">
+              <blockquote class="testimonial-slide__quote">"My robot won first prize in the inter-school competition! The mentors were super supportive."</blockquote>
+              <p class="testimonial-slide__author">— Rahul, Age 11 | Robotics</p>
+            </div>
+            <div class="testimonial-slide">
+              <img src="https://api.placeholder.com/80/80?text=Priya" alt="Priya's Mom" class="testimonial-slide__photo">
+              <blockquote class="testimonial-slide__quote">"Best decision we made! Priya has become so confident. The progress updates keep us involved."</blockquote>
+              <p class="testimonial-slide__author">— Priya's Mom | Parent</p>
+            </div>
+            <div class="testimonial-slide">
+              <img src="https://api.placeholder.com/80/80?text=Arjun" alt="Arjun, Age 13" class="testimonial-slide__photo">
+              <blockquote class="testimonial-slide__quote">"I built my first app here! AI course taught me things I never thought a kid could do."</blockquote>
+              <p class="testimonial-slide__author">— Arjun, Age 13 | Software</p>
+            </div>
+            <div class="testimonial-slide">
+              <img src="https://api.placeholder.com/80/80?text=Divya" alt="Divya, Age 10" class="testimonial-slide__photo">
+              <blockquote class="testimonial-slide__quote">"Chess has made me better at thinking! I love the friendly tournaments here."</blockquote>
+              <p class="testimonial-slide__author">— Divya, Age 10 | Chess</p>
+            </div>
+          </div>
+          <div class="testimonial-carousel__controls">
+            <button class="carousel-btn" id="testimonialPrev" aria-label="Previous testimonial">‹</button>
+            <div class="carousel-dots" id="testimonialDots"></div>
+            <button class="carousel-btn" id="testimonialNext" aria-label="Next testimonial">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">About VSP Techies</h2>
+        </div>
+        <div class="about__content reveal">
+          <p class="about__mission">
+            At <strong>VSP Techies</strong>, we believe every child has the potential to become a creator,
+            innovator, and leader. Our mission is to make technology education accessible, engaging, and
+            empowering — blending fun hands-on projects with structured learning that parents can trust.
+            From building robots to mastering design tools and chess strategy, we nurture curiosity and
+            confidence in every student.
+          </p>
+          <div class="pillars">
+            <div class="pillar">
+              <span class="pillar__icon">📚</span>
+              <h3 class="pillar__title">Learn</h3>
+              <p class="pillar__text">Master cutting-edge skills through guided, age-appropriate curriculum.</p>
+            </div>
+            <div class="pillar">
+              <span class="pillar__icon">🛠️</span>
+              <h3 class="pillar__title">Create</h3>
+              <p class="pillar__text">Build real projects — robots, apps, designs &amp; more you can show off.</p>
+            </div>
+            <div class="pillar">
+              <span class="pillar__icon">🏆</span>
+              <h3 class="pillar__title">Compete</h3>
+              <p class="pillar__text">Enter competitions &amp; showcases that build confidence and teamwork.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Frequently Asked Questions</h2>
+          <p class="section__subtitle">Got questions? We've got answers!</p>
+        </div>
+        <div class="faq__items">
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>What age can kids start taking courses?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Different courses have different age recommendations:</p>
+              <ul>
+                <li><strong>Chess:</strong> 6+ years</li>
+                <li><strong>Robotics:</strong> 8-16 years</li>
+                <li><strong>CorelDRAW/Photoshop:</strong> 10+ years</li>
+                <li><strong>AI & Software:</strong> 10-18 years</li>
+              </ul>
+              <p>We can suggest the best course based on your child's age and interests!</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Do you provide all materials and kits?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Yes! For Robotics courses, all robot kits and materials are provided as part of the course fee. For design courses (CorelDRAW, Photoshop), students need laptops which can be brought from home or arranged through us at a nominal charge. Software courses only need a computer/laptop.</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>What happens after the course completes?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>After completing a course, students receive:</p>
+              <ul>
+                <li>An official VSP Techies Certificate</li>
+                <li>Access to alumni community for networking</li>
+                <li>Option to take advanced levels of the same course</li>
+                <li>Eligibility to participate in competitions and workshops</li>
+                <li>Lifetime access to recorded sessions and materials</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Are there refunds or flexible payment options?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>We offer flexible payment plans to make learning accessible. Refund policy:</p>
+              <ul>
+                <li>100% refund if cancelled within 7 days of enrollment</li>
+                <li>50% refund within 15 days if more than 2 classes have been attended</li>
+                <li>No refund after 15 days of enrollment</li>
+              </ul>
+              <p>Contact us to discuss your specific situation!</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Do you offer online classes?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Currently, we offer in-person classes for the best hands-on learning experience, especially for Robotics where students need to physically build and test. However, we are exploring online options for Software and AI courses. Contact us for the latest updates!</p>
+            </div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>How often are progress updates given to parents?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>We believe in regular parent communication:</p>
+              <ul>
+                <li>Monthly progress reports via email</li>
+                <li>Parent-teacher meets every quarter</li>
+                <li>WhatsApp updates with photos/videos of class projects</li>
+                <li>Direct communication available anytime via phone or email</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq__item reveal">
+            <button class="faq__question" aria-expanded="false">
+              <span>Can we visit before enrolling?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer">
+              <p>Absolutely! We encourage parents and students to visit our facility and observe a class. This helps you understand our teaching methodology and see if it's the right fit. We also offer a free demo class. Just reach out to us!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__subtitle">Have questions? We'd love to hear from you!</p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="contact__icon">📞</span>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+917845367575">+91 78453 67575</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">✉️</span>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:vspomalur@gmail.com">vspomalur@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">📍</span>
+              <div>
+                <h4>Address</h4>
+                <p>SK Nagar,<br>Near Mecheri Pirivu, Tharamangalam Main Road, Omalur, Salem(dt) - 636455.</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">🕐</span>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon – Sat: 10:00 AM – 7:00 PM<br>Sun: 10:00 AM – 5:00PM</p>
+              </div>
+            </div>
+            <div class="contact__social">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+                <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+                <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">▶️</a>
+                <a href="https://wa.me/917845367575" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 12345 67890" required>
+              <span class="form-error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label for="role">I am a *</label>
+              <select id="role" name="role" required>
+                <option value="">Select...</option>
+                <option value="parent">Parent</option>
+                <option value="student">Student</option>
+              </select>
+              <span class="form-error" id="roleError"></span>
+            </div>
+            <div class="form-group">
+              <label for="course">Course Interested In *</label>
+              <select id="course" name="course" required>
+                <option value="">Select a course...</option>
+                <option value="robotics">Robotics</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="coreldraw">CorelDRAW</option>
+                <option value="photoshop">Photoshop</option>
+                <option value="software">Software Courses</option>
+                <option value="chess">Chess</option>
+              </select>
+              <span class="form-error" id="courseError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your interest..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+      <div class="container">
+        <div class="newsletter__content reveal">
+          <h2>Stay Updated</h2>
+          <p>Get the latest updates about new courses, events, and success stories delivered to your inbox.</p>
+          <form class="newsletter__form" id="newsletterForm" novalidate>
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+          <span class="form-error" id="newsletterError" style="display: block; margin-top: 10px;"></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">⚡ VSP Techies</a>
+        <p class="footer__tagline">Learn · Create · Compete</p>
+      </div>
+      <nav class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+        <a href="https://youtube.com" aria-label="YouTube" target="_blank" rel="noopener">▶️</a>
+        <a href="https://wa.me/917845367575" aria-label="WhatsApp" target="_blank" rel="noopener">💬</a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 VSP Techies. All rights reserved.</p>
+      <p class="footer__quote">"The best way to predict the future is to create it."</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" style="display: none;">
+    ↑
+  </button>
+
+  <!-- Course Modal -->
+  <div class="modal" id="courseModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Close modal">&times;</button>
+      <div class="modal__icon" id="modalIcon"></div>
+      <h2 class="modal__title" id="modalTitle"></h2>
+      <p class="modal__desc" id="modalDesc"></p>
+      <div class="modal__details" id="modalDetails"></div>
+      <a href="#contact" class="btn btn--primary" id="modalEnroll">Enquire Now</a>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive">
+    <span class="toast__icon">✓</span>
+    <span class="toast__message" id="toastMessage"></span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
