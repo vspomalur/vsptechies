@@ -1105,11 +1105,6 @@ ul {
 
 .footer__links a {
   color: var(--gray-400);
-   background: var(--white);
-  border-radius: 50%;
-  font-size: 1.2rem;
-  transition: all var(--transition);
-  box-shadow: var(--shadow-sm);
   transition: color var(--transition);
 }
 
@@ -1126,12 +1121,18 @@ ul {
 .footer__social-link {
   display: inline-block;
   font-size: 1.2rem;
+  background: var(--white);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
   color: var(--grey-400);
   transition: color var(--transition);
 }
 
 .footer__social-link:hover {
   color: var(--accent-orange);
+  background: var(--primary);
 }
 
 .footer__bottom {
