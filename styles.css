@@ -5,7 +5,7 @@
 
 /* --- CSS Variables --- */
 :root {
-  --primary: #002792;
+  --primary: #1e3b85;
   --primary-light: #2a4fa8;
   --primary-dark: #152a5e;
   --accent-orange: #ff8c42;
@@ -931,32 +931,32 @@ ul {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: #87CEEB;
+  background: #5DADE2;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
-  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.3);
+  box-shadow: 0 3px 12px rgba(93, 173, 226, 0.5);
   color: #FFFFFF;
 }
 
 /* Platform-specific colors for social links */
 .social-links a[href*="facebook.com"] {
-  background: #87CEEB;
+  background: #5DADE2;
   color: #FFFFFF;
 }
 
 .social-links a[href*="instagram.com"] {
-  background: #87CEEB;
+  background: #5DADE2;
   color: #FFFFFF;
 }
 
 .social-links a[href*="youtube.com"] {
-  background: #87CEEB;
+  background: #5DADE2;
   color: #FFFFFF;
 }
 
 .social-links a[href*="wa.me"] {
-  background: #87CEEB;
+  background: #5DADE2;
   color: #FFFFFF;
 }
 
@@ -968,22 +968,22 @@ ul {
 
 /* Darker shades on hover */
 .social-links a[href*="facebook.com"]:hover {
-  background: #6BB6D6;
+  background: #4A9FD8;
   color: #FFFFFF;
 }
 
 .social-links a[href*="instagram.com"]:hover {
-  background: #6BB6D6;
+  background: #4A9FD8;
   color: #FFFFFF;
 }
 
 .social-links a[href*="youtube.com"]:hover {
-  background: #6BB6D6;
+  background: #4A9FD8;
   color: #FFFFFF;
 }
 
 .social-links a[href*="wa.me"]:hover {
-  background: #6BB6D6;
+  background: #4A9FD8;
   color: #FFFFFF;
 }
 
@@ -1163,41 +1163,12 @@ ul {
 .footer__social-link {
   display: inline-block;
   font-size: 1.2rem;
-  /* color: var(--gray-400); */
+  color: var(--gray-400);
   transition: color var(--transition);
-  background: #87CEEB;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  transition: all var(--transition);
-  box-shadow: 0 2px 8px rgba(135, 206, 235, 0.3);
-  color: #FFFFFF;
-}
-/* Platform-specific colors for social links */
-
-
-.footer__social-link[href*="instagram.com"] {
-  background: #74f8ff;
-  color: #FFFFFF;
-}
-.footer__social-link[href*="wa.me"] {
-  background: #74f8ff;
-  color: #FFFFFF;
 }
 
 .footer__social-link:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
   color: var(--accent-orange);
-}
-
-/* Darker shades on hover */
-.footer__social-link[href*="instagram.com"]:hover {
-  background:#23bdc5;
-  color: #FFFFFF;
-}
-.footer__social-link[href*="wa.me"]:hover {
-  background: #23bdc5;
-  color: #FFFFFF;
 }
 
 .footer__bottom {
@@ -1228,7 +1199,7 @@ ul {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: #87CEEB;
+  background: #5DADE2;
   color: var(--white);
   border: none;
   border-radius: 50%;
@@ -1239,7 +1210,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.4);
+  box-shadow: 0 4px 12px rgba(93, 173, 226, 0.4);
   transition: all var(--transition);
   opacity: 1;
   visibility: visible;
@@ -1248,9 +1219,9 @@ ul {
 
 
 .back-to-top:hover {
-  background: #6BB6D6;
+  background: #4A9FD8;
   transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(135, 206, 235, 0.6);
+  box-shadow: 0 6px 16px rgba(93, 173, 226, 0.6);
 }
 
 /* --- Modal --- */
