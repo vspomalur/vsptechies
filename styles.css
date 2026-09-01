@@ -624,7 +624,8 @@ ul {
 
 .stat__suffix {
   color: var(--accent-orange);
-  font-size: 1.0rem;   
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .stat__label {
@@ -1161,14 +1162,14 @@ ul {
   gap: 1rem;
 }
 
-.footer__social-link {
+.footer__social a {
   display: inline-block;
   font-size: 1.2rem;
-  color: var(--gray-400);
+  color: var(--white);
   transition: color var(--transition);
 }
 
-.footer__social-link:hover {
+.footer__social a:hover {
   color: var(--accent-orange);
 }
 
