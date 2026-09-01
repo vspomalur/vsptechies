@@ -624,6 +624,7 @@ ul {
 
 .stat__suffix {
   color: var(--accent-orange);
+  font-size: 1.0rem;   
 }
 
 .stat__label {
