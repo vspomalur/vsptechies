@@ -1168,7 +1168,7 @@ ul {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: #5DADE2;
+  background: #0ea500;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
@@ -1180,7 +1180,7 @@ ul {
   color: var(--accent-orange);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  background: #4A9FD8;
+  background: #48ff38;
 }
 
 .footer__bottom {
