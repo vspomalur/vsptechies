@@ -181,6 +181,10 @@ ul {
   height: 100%;
 }
 
+.nav__inner.container{
+   height: 100px 
+}
+
 .nav__logo {
   font-size: 1.5rem;
   font-weight: 800;
@@ -195,8 +199,8 @@ ul {
 }
 
 .nav__logo-icon img {
-  height: 60px;
-   width: 100px;
+  height: 80px;
+   width: 160px;
 }
 
 .nav__links {
@@ -1139,11 +1143,15 @@ ul {
   font-weight: 800;
   color: var(--white);
   margin-bottom: 0.5rem;
+  background: #ffffff;
+  height: 100px;
+   width: 200px;
+  border-radius: 15%;
 }
 
 .footer__logo img {
-height: 60px;
-   width: 100px;
+height: 80px;
+   width: 150px;
 }
 
 .footer__tagline {
@@ -1178,7 +1186,7 @@ height: 60px;
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: #46c282;
+  background: #40c472;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
@@ -1190,7 +1198,7 @@ height: 60px;
   color: var(--accent-orange);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-  background: #40c472;
+  background: #46c282;
 }
 
 .footer__bottom {
