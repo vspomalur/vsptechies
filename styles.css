@@ -1163,14 +1163,24 @@ ul {
 }
 
 .footer__social a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #5DADE2;
+  border-radius: 50%;
   font-size: 1.2rem;
-  color: var(--white);
-  transition: color var(--transition);
+  transition: all var(--transition);
+  box-shadow: 0 3px 12px rgba(93, 173, 226, 0.5);
+  color: #FFFFFF;
 }
 
 .footer__social a:hover {
   color: var(--accent-orange);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  background: #4A9FD8;
 }
 
 .footer__bottom {
