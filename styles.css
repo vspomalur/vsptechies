@@ -28,7 +28,7 @@
   --radius-sm: 10px;
   --font: 'Nunito', 'Poppins', system-ui, sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --nav-height: 64px;
+  --nav-height: 100px;
 }
 
 /* --- Reset & Base --- */
@@ -181,10 +181,6 @@ ul {
   height: 100%;
 }
 
-.nav__inner.container{
-   height: 100px 
-}
-
 .nav__logo {
   font-size: 1.5rem;
   font-weight: 800;
@@ -199,8 +195,8 @@ ul {
 }
 
 .nav__logo-icon img {
-  height: 80px;
-   width: 160px;
+  height: 60px;
+   width: 100px;
 }
 
 .nav__links {
@@ -1143,10 +1139,13 @@ ul {
   font-weight: 800;
   color: var(--white);
   margin-bottom: 0.5rem;
-  background: #ffffff;
+  background: #68a6bb;
   height: 100px;
    width: 200px;
-  border-radius: 15%;
+  border-radius: var(--radius-sm);
+    align-items: center;
+  justify-content: center;
+   
 }
 
 .footer__logo img {
