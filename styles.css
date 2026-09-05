@@ -182,10 +182,10 @@ ul {
 }
 
 .nav__logo {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 0.7rem;
+  font-weight: 400;
   color: var(--primary);
-  display: flex;
+  display: block;
   align-items: center;
   gap: 0.5rem;
 }
@@ -1132,6 +1132,7 @@ ul {
 .footer__brand {
   display: flex;
   flex-direction: column;
+   cursor: pointer;
 }
 
 .footer__logo {
@@ -1145,17 +1146,25 @@ ul {
   border-radius: var(--radius-sm);
     align-items: center;
   justify-content: center;
+     text-align: center;
+
    
 }
 
 .footer__logo img {
-height: 70px;
+height: 60px;
    width: 100px;
+     box-shadow: var(--shadow-md);
+
 }
 
 .footer__tagline {
-  color: var(--gray-400);
+  color: var(--gray-600);
   font-size: 0.9rem;
+}
+
+.footer__tagline:hover {
+     color: var(--accent-orange);
 }
 
 .footer__links {
@@ -1190,7 +1199,7 @@ height: 70px;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
-  box-shadow: 0 3px 12px rgb(7 27 4 / 57%)
+  box-shadow: 0 3px 12px rgb(7 27 4 / 57%);
   color: #FFFFFF;
 }
 
