@@ -201,6 +201,11 @@ ul {
   align-items: center;
 }
 
+.nav__logo-icon {
+   display: flex;
+   flex-direction: column;
+}
+
 .nav__logo-icon img {
   height: 60px;
    width: 100px;
