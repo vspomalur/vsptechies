@@ -197,11 +197,12 @@ ul {
    width: 500px;
    height: 70px;
     display: flex;
+   flex-direction: row;   
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__logo-icon {
+.nav__logo-icon p {
    display: flex;
    flex-direction: column;
 }
