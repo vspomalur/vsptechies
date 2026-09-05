@@ -615,23 +615,56 @@
         return;
       }
 
-      var submitBtn = form.querySelector('button[type="submit"]');
-      var originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Subscribing...';
-      submitBtn.disabled = true;
+      submitNewsletterToService(form);
+    });
+  }
 
-      setTimeout(function () {
-        emailInput.value = '';
-        errorEl.textContent = '✓ Successfully subscribed! Check your email.';
-        errorEl.style.color = '#22c55e';
+  /* --- Submit newsletter subscription to Formspree --- */
+  function submitNewsletterToService(form) {
+    var formData = new FormData(form);
+    var formspreeEndpoint = 'https://formspree.io/f/xzebbnjg';
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var emailInput = document.getElementById('newsletterEmail');
+    var errorEl = document.getElementById('newsletterError');
+    var originalText = submitBtn.textContent;
+
+    submitBtn.textContent = 'Subscribing...';
+    submitBtn.disabled = true;
+    errorEl.textContent = '';
+
+    fetch(formspreeEndpoint, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+      .then(function (response) {
+        if (response.ok) {
+          form.reset();
+          showToast('✓ You\'re subscribed! Check your email for confirmation.');
+        } else {
+          return response.json().then(function (data) {
+            var message = 'Something went wrong. Please try again.';
+            if (data && data.errors && data.errors.length) {
+              message = data.errors.map(function (item) {
+                return item.message;
+              }).join(' ');
+            }
+            throw new Error(message);
+          });
+        }
+      })
+      .catch(function (error) {
+        console.error('Newsletter subscription error:', error);
+        errorEl.textContent = error.message || 'Network error. Please check your connection.';
+        errorEl.style.color = '#ef4444';
+      })
+      .finally(function () {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-
-        setTimeout(function () {
-          errorEl.textContent = '';
-        }, 4000);
-      }, 1000);
-    });
+        if (emailInput) emailInput.focus();
+      });
   }
 
   /* --- Form Utilities --- */
