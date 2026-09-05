@@ -28,7 +28,7 @@
   --radius-sm: 10px;
   --font: 'Nunito', 'Poppins', system-ui, sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --nav-height: 100px;
+  --nav-height: 70px;
 }
 
 /* --- Reset & Base --- */
@@ -1137,7 +1137,7 @@ ul {
 .footer__logo {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--gray-800);
+  color: var(--primary);
   margin-bottom: 0.5rem;
   background: #FFFFFF;
   height: 100px;
@@ -1149,8 +1149,8 @@ ul {
 }
 
 .footer__logo img {
-height: 80px;
-   width: 150px;
+height: 70px;
+   width: 100px;
 }
 
 .footer__tagline {
@@ -1165,7 +1165,8 @@ height: 80px;
 }
 
 .footer__links a {
-  color: var(--gray-800);
+  color: var(--primary);
+   font-weight: 500;
   transition: color var(--transition);
 }
 
@@ -1189,7 +1190,7 @@ height: 80px;
   border-radius: 50%;
   font-size: 1.2rem;
   transition: all var(--transition);
-  box-shadow: 0 3px 12px rgba(93, 173, 226, 0.5);
+  box-shadow: 0 3px 12px rgb(7 27 4 / 57%)
   color: #FFFFFF;
 }
 
