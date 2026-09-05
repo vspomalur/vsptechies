@@ -1110,8 +1110,8 @@ ul {
 
 /* --- Footer --- */
 .footer {
-  background: var(--gray-800);
-  color: var(--white);
+  background: var(--white);
+  color: var(--gray-800);
   padding: 3rem 0 1rem;
 }
 
@@ -1137,9 +1137,9 @@ ul {
 .footer__logo {
   font-size: 1.25rem;
   font-weight: 800;
-  color: var(--white);
+  color: var(--gray-800);
   margin-bottom: 0.5rem;
-  background: #68a6bb;
+  background: #FFFFFF;
   height: 100px;
    width: 200px;
   border-radius: var(--radius-sm);
@@ -1165,12 +1165,12 @@ height: 80px;
 }
 
 .footer__links a {
-  color: var(--gray-400);
+  color: var(--gray-800);
   transition: color var(--transition);
 }
 
 .footer__links a:hover {
-  color: var(--white);
+  color: var(--accent-orange);
 }
 
 .footer__social {
