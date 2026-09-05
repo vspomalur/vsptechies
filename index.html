@@ -482,7 +482,8 @@
           <h2>Stay Updated</h2>
           <p>Get the latest updates about new courses, events, and success stories delivered to your inbox.</p>
           <form class="newsletter__form" id="newsletterForm" novalidate>
-            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email" autocomplete="email" required>
+            <input type="hidden" name="form_type" value="newsletter_subscription">
             <button type="submit" class="btn btn--primary">Subscribe</button>
           </form>
           <span class="form-error" id="newsletterError" style="display: block; margin-top: 10 px;"></span>
