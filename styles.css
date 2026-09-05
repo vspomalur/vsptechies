@@ -199,17 +199,18 @@ ul {
     display: flex;
    flex-direction: row;   
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
+   gap: 0.5rem; 
 }
 
 .vspt {
   display: flex;
   flex-direction: column; /* Stacks children vertically */
-  align-items: flex-start; /* Aligns text to the left; change to 'center' if needed */
+  align-items: center; /* Aligns text to the left; change to 'center' if needed */
 }
 
 .vspt h6 {
-  font-weight: normal; /* Adjust styling for the tagline */
+  /* font-weight: normal; /* Adjust styling for the tagline */ 
   margin-top: 4px; /* Gives a tiny bit of breathing room below the title */
 }
 
@@ -1191,9 +1192,7 @@ height: 60px;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;  
+  padding-left: 20px; 
 }
 
 .footer__links a {
